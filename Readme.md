@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Dmitriy Varganov](https://up.htmlacademy.ru/htmlcss/18/user/254319).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/id262423).
 
 ---
 
