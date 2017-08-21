@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-nav container">
+
+      <a class="main-nav__logo-link">
+        <img src="" alt="Логотип дизайн-студии nёrds" class="main-nav__logo-img">
+      </a>
+
+      <ul class="nav-list main-nav__nav-list">
+        <li class="nav-list__item main-nav__list-item">
+          <a href="#" class="nav-list__link main-nav__nav-link">Студенты</a>
+        </li>
+        <li class="nav-list__item main-nav__list-item">
+          <a href="#" class="nav-list__link main-nav__nav-link">Клиенты</a>
+        </li>
+        <li class="nav-list__item main-nav__list-item">
+          <a href="#" class="nav-list__link main-nav__nav-link">Магазины</a>
+        </li>
+        <li class="nav-list__item main-nav__list-item">
+          <a href="#" class="nav-list__link main-nav__nav-link">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="nav-list main-header__user-nav">
+        <li class="nav-list__item main-header__user-item">
+          <a href="#" class="nav-list__link main-header__user-link main-header__user-link--cart">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="main-header__page-header first-header">Магазин готовых шаблонов</h1>
+  </header>
+
+  <main class="main">
+    <div class="main__left-column">
+      <form action="#" class="form">
+        <fieldset class="form-price form-fieldset">
+          <legend class="form-fieldset__legend">Стоимость:</legend>
+          <div class="form-fieldset__range-controls">
+            <div class="form-fieldset__scale">
+              <div class="form-fieldset__bar"></div>
+            </div>
+            <div class="form-fieldset__range-toggle form-fieldset__range-toggle--min"></div>
+            <div class="form-fieldset__range-toggle form-fieldset__range-toggle--max"></div>
+          </div>
+          <label for="min-price" class="form-fieldset__label">От
+            <input type="text" class="form-fieldset__input" name="min-price" id="min-price"></label>
+          <label for="max-price" class="form-fieldset__label">До
+            <input type="text" class="form-fieldset__input" name="max-price" id="max-price"></label>
+        </fieldset>
+
+        <fieldset class="form-layout form-fieldset">
+          <legend class="form-fieldset__legend">Сетка:</legend>
+          <label for="adaptive" class="form-fieldset__label">Адаптивная</label>
+          <input type="radio" class="form-fieldset__input form-fieldset__input--radio" name="layout" id="adaptive" value="adaptive">
+          <label for="fixed" class="form-fieldset__label">Фиксированная</label>
+          <input type="radio" class="form-fieldset__input form-fieldset__input--radio" name="layout" id="fixed" value="fixed">
+          <label for="responsive" class="form-fieldset__label">Резиновая</label>
+          <input type="radio" class="form-fieldset__input form-fieldset__input--radio" name="layout" id="responsive" value="responsive">
+        </fieldset>
+
+        <fieldset class="form-features form-fieldset">
+          <legend class="form-fieldset__legend">Особенности:</legend>
+          <label for="slider" class="form-fieldset__label">Слайдер</label>
+          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="slider" id="slider">
+
+          <label for="advantages-block" class="form-fieldset__label">Фиксированная</label>
+          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="advantages-block" id="advantages-block">
+
+          <label for="news" class="form-fieldset__label">Новости</label>
+          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="news" id="news">
+
+          <label for="gallery" class="form-fieldset__label">Галерея</label>
+          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="gallery" id="gallery">
+
+          <label for="cart" class="form-fieldset__label">Корзина</label>
+          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="cart" id="cart">
+        </fieldset>
+
+        <button type="submit" class="btn form-btn">Показать</button>
+      </form>
+    </div>
+    <div class="main__right-column">
+      <header class="main__column-header">
+        <h4 class="fourth-header">Сортировать:</h4>
+        <ul class="main__sort-list">
+          <li class="main__sort-item">
+            <a href="#" class="main__sort-type active">По цене</a></li>
+          <li class="main__sort-item">
+            <a href="#" class="main__sort-type">По типу</a></li>
+          <li class="main__sort-item">
+            <a href="#" class="main__sort-type">По названию</a></li>
+          <li class="main__sort-item">
+            <a href="#" class="main__sort-type active">По убыванию</a></li>
+          <li class="main__sort-item">
+            <a href="#" class="main__sort-type">По возрастанию</a></li>
+        </ul>
+      </header>
+
+      <div class="main__products-layout">
+        <article class="product-item">
+          <span class="product-item__visual-btn"></span>
+          <img src="" alt="Информационный сайт для туристов Sedona" class="product-item__img">
+          <div class="product-item__info-wrapper">
+            <h4 class="product-item__info-header">Sedona</h4>
+            <p class="product-item__info-paragraph">Информационный сайт для туристов</p>
+            <a href="#" class="product-item__price-btn">9 900 руб.</a>
+          </div>
+        </article>
+
+        <article class="product-item">
+          <span class="product-item__visual-btn"></span>
+          <img src="" alt="Продуктовый лендинг приложения для iOS и Android Pink" class="product-item__img">
+          <div class="product-item__info-wrapper">
+            <h4 class="product-item__info-header">Pink app</h4>
+            <p class="product-item__info-paragraph">Продуктовый лендинг
+              приложения для iOS и Android</p>
+            <a href="#" class="product-item__price-btn">9 900 руб.</a>
+          </div>
+        </article>
+
+        <article class="product-item">
+          <span class="product-item__visual-btn"></span>
+          <img src="" alt="Сайт салона красоты Barbershop" class="product-item__img">
+          <div class="product-item__info-wrapper">
+            <h4 class="product-item__info-header">Barbershop</h4>
+            <p class="product-item__info-paragraph">Сайт салоны красоты.Для мужчин, да.</p>
+            <a href="#" class="product-item__price-btn">9 900 руб.</a>
+          </div>
+        </article>
+
+        <article class="product-item">
+          <span class="product-item__visual-btn"></span>
+          <img src="" alt="Интернет-магазин вязаных игрушек Mishka" class="product-item__img">
+          <div class="product-item__info-wrapper">
+            <h4 class="product-item__info-header">Mishka</h4>
+            <p class="product-item__info-paragraph">Интернет-магазин вязаных игрушек</p>
+            <a href="#" class="product-item__price-btn">9 900 руб.</a>
+          </div>
+        </article>
+
+        <article class="product-item">
+          <span class="product-item__visual-btn"></span>
+          <img src="" alt="Лендинг курсов повышения квалификации A PLUS" class="product-item__img">
+          <div class="product-item__info-wrapper">
+            <h4 class="product-item__info-header">A plus</h4>
+            <p class="product-item__info-paragraph">Лендинг курсов повышения квалификации</p>
+            <a href="#" class="product-item__price-btn">9 900 руб.</a>
+          </div>
+        </article>
+
+        <article class="product-item">
+          <span class="product-item__visual-btn"></span>
+          <img src="" alt="Промо-сайт производителя крафтового кваса КВАСТ" class="product-item__img">
+          <div class="product-item__info-wrapper">
+            <h4 class="product-item__info-header">Кваст</h4>
+            <p class="product-item__info-paragraph">Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="product-item__price-btn">9 900 руб.</a>
+          </div>
+        </article>
+
+        <div class="pagination">
+          <a href="#" class="pagination__item">1</a>
+          <a href="#" class="pagination__item">2</a>
+          <a href="#" class="pagination__item">3</a>
+          <a href="#" class="pagination__item pagination__item--broader">Следующая</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <section class="map-block">
+      <div class="map-block__contacts">
+        <h3 class="third-header map-block__header">NЁRDS DESIGN STUDIO</h3>
+        <p class="map-block__paragraph"></p>
+        <p class="map-block__paragraph"></p>
+        <a href="#" class="btn map-block__btn"></a>
+      </div>
+    </section>
+    <div class="main-footer__social-block">
+      <a href="#" class="main-footer__social-btn main-footer__social-btn--vk"></a>
+      <a href="#" class="main-footer__social-btn main-footer__social-btn--fb"></a>
+      <a href="#" class="main-footer__social-btn main-footer__social-btn--inst"></a>
+    </div>
+    <div class="main-footer__promo">
+      <b class="main-footer__promo-text">Давайте дружить, это выгодно!</b>
+      <p class="main-footer__paragraph">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+
+  <section class="modal-window">
+    <b class="modal-window__text-promo">Напишите нам</b>
+    <form action="#" class="contact-form">
+      <label for="FIO" class="contact-form__label">
+        Ваше имя:
+        <input type="text" class="contact-form__input" name="FIO" id="FIO" placeholder="Представьтесь, пожалуйста">
+      </label>
+      <label for="email" class="contact-form__label">
+        Ваш e-mail:
+        <input type="email" class="contact-form__input" name="email" id="email" placeholder="Для отправки ответа">
+      </label>
+      <label for="text" class="contact-form__label">Текст письма:</label>
+      <textarea name="text" id="text" class="contact-form__textarea">В свободной форме</textarea>
+    </form>
+  </section>
+</body>
+</html>

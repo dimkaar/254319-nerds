@@ -5,8 +5,181 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+    <header class="main-header">
+      <section class="slider">
+        <nav class="main-nav container">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+          <a class="main-nav__logo-link">
+            <img src="" alt="Логотип дизайн-студии nёrds" class="main-nav__logo-img">
+          </a>
 
+          <ul class="nav-list main-nav__nav-list">
+            <li class="nav-list__item main-nav__list-item">
+              <a href="#" class="nav-list__link main-nav__nav-link">Студенты</a>
+            </li>
+            <li class="nav-list__item main-nav__list-item">
+              <a href="#" class="nav-list__link main-nav__nav-link">Клиенты</a>
+            </li>
+            <li class="nav-list__item main-nav__list-item">
+              <a href="#" class="nav-list__link main-nav__nav-link">Магазины</a>
+            </li>
+            <li class="nav-list__item main-nav__list-item">
+              <a href="#" class="nav-list__link main-nav__nav-link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="nav-list main-header__user-nav">
+            <li class="nav-list__item main-header__user-item">
+              <a href="#" class="nav-list__link main-header__user-link main-header__user-link--cart">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+
+        <input type="radio" class="slider__radio-control" name="slides" id="slide1" checked>
+        <input type="radio" class="slider__radio-control" name="slides" id="slide2">
+        <input type="radio" class="slider__radio-control" name="slides" id="slide3">
+        <div class="slider__slides-wrapper">
+          <div class="slider__slide slider__slide1 container">
+            <b class="slider__promo-text">
+              Долго, дорого, скрупулезно.</b>
+            <p class="slider__slide-text">
+              Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="btn slider__slide-btn">Узнать больше</a>
+          </div>
+          <div class="slider__slide slider__slide2 container">
+            <b class="slider__promo-text">
+              Любим математику как никто другой</b>
+            <p class="slider__slide-text">
+              Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a href="#" class="btn slider__slide-btn">Узнать больше</a>
+          </div>
+          <div class="slider__slide slider__slide3 container">
+            <b class="slider__promo-text">
+              Только ночь,
+              только хардкор</b>
+            <p class="slider__slide-text">
+              Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#" class="btn slider__slide-btn">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slider__controls-wrapper">
+          <label for="slide1" class="slider__control"></label>
+          <label for="slide2" class="slider__control"></label>
+          <label for="slide3" class="slider__control"></label>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <h1 class="main__title">
+        Дизайн-студия nёrds</h1>
+      <section class="services-block container container--underlined">
+        <article class="services-block__item">
+          <img src="#" alt="Веб-сайты" class="services-block__img">
+          <h2 class="services-block__header">Веб-сайты</h2>
+          <p class="services-block__paragraph">
+            Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#" class="btn services-block__btn">Заказать</a>
+        </article>
+        <article class="services-block__item">
+          <img src="#" alt="Приложения" class="services-block__img">
+          <h2 class="services-block__header"></h2>
+          <p class="services-block__paragraph">
+            Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#" class="btn services-block__btn">Заказать</a>
+        </article>
+        <article class="services-block__item">
+          <img src="#" alt="Презентации" class="services-block__img">
+          <h2 class="services-block__header"></h2>
+          <p class="services-block__paragraph">
+            Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="#" class="btn services-block__btn">Заказать</a>
+        </article>
+      </section>
+      <section class="about-company container container--underlined">
+        <div class="about-company__left-column">
+          <b class="about-company__promo-header">
+            Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p class="about-company__paragraph">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="about-company__paragraph paragraph-bold">
+            Выполняем заказы на разработку:</p>
+          <ul class="about-company__list">
+            <li class="about-company__list-item">
+              Веб-сайтов любой сложности</li>
+            <li class="about-company__list-item">
+              Мобильных приложений для iOS и Android</li>
+            <li class="about-company__list-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-company__right-column">
+          <p class="about-company__paragraph paragraph-bold paragraph-bold--center">
+            с 2004 года Любим точность во всем:</p>
+          <dl class="about-company__numbers-list">
+            <dt class="about-company__numbers-item">146
+              <sup class="about-company__percents-sup">%</sup>
+            </dt>
+            <dd class="about-company__numbers-description">Уровень самоотдачи</dd>
+            <dt class="about-company__numbers-item">100
+              <sup class="about-company__percents-sup">%</sup>
+            </dt>
+            <dd class="about-company__numbers-description">Соблюдение сроков</dd>
+            <dt class="about-company__numbers-item">50
+              <sup class="about-company__percents-sup">%</sup>
+            </dt>
+            <dd class="about-company__numbers-description">Минимальная предоплата</dd>
+          </dl>
+        </div>
+      </section>
+      <section class="clients-block container container--underlined">
+        <a href="#" class="clients-block__link-img">
+          <img src="" alt="HTMLAcademy" class="clients-block__img">
+        </a>
+        <a href="#" class="clients-block__link-img">
+          <img src="" alt="Барбершоп Borodinski" class="clients-block__img">
+        </a>
+        <a href="#" class="clients-block__link-img">
+          <img src="" alt="Pink" class="clients-block__img">
+        </a>
+        <a href="#" class="clients-block__link-img">
+          <img src="" alt="Магазин вязаных вещей Mishka" class="clients-block__img">
+        </a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <section class="map-block">
+        <div class="map-block__contacts">
+          <h3 class="third-header map-block__header">NЁRDS DESIGN STUDIO</h3>
+          <p class="map-block__paragraph"></p>
+          <p class="map-block__paragraph"></p>
+          <a href="#" class="btn map-block__btn"></a>
+        </div>
+      </section>
+      <div class="main-footer__social-block">
+        <a href="#" class="main-footer__social-btn main-footer__social-btn--vk"></a>
+        <a href="#" class="main-footer__social-btn main-footer__social-btn--fb"></a>
+        <a href="#" class="main-footer__social-btn main-footer__social-btn--inst"></a>
+      </div>
+      <div class="main-footer__promo">
+        <b class="main-footer__promo-text">Давайте дружить, это выгодно!</b>
+        <p class="main-footer__paragraph">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+
+    <section class="modal-window">
+      <b class="modal-window__text-promo">Напишите нам</b>
+      <form action="#" class="contact-form">
+        <label for="FIO" class="contact-form__label">
+          Ваше имя:
+          <input type="text" class="contact-form__input" name="FIO" id="FIO" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label for="email" class="contact-form__label">
+          Ваш e-mail:
+          <input type="email" class="contact-form__input" name="email" id="email" placeholder="Для отправки ответа">
+        </label>
+        <label for="text" class="contact-form__label">Текст письма:</label>
+        <textarea name="text" id="text" class="contact-form__textarea">В свободной форме</textarea>
+      </form>
+    </section>
   </body>
 </html>
