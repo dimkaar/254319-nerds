@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Нёрдс</title>
 </head>
 <body>
@@ -12,7 +15,7 @@
         <img src="" alt="Логотип дизайн-студии nёrds" class="main-nav__logo-img">
       </a>
 
-      <ul class="nav-list">
+      <ul class="nav-list main-nav__nav-list">
         <li class="nav-list__item">
           <a href="#" class="nav-list__link">Студия</a>
         </li>
@@ -27,7 +30,7 @@
         </li>
       </ul>
 
-      <ul class="nav-list">
+      <ul class="nav-list main-nav__user-list">
         <li class="nav-list__item">
           <a href="#" class="nav-list__link nav-list__link--cart">Корзина</a>
         </li>
@@ -58,7 +61,7 @@
         <fieldset class="form-layout form-fieldset">
           <legend class="form-fieldset__legend">Сетка:</legend>
           <label for="adaptive" class="form-fieldset__label">Адаптивная</label>
-          <input type="radio" class="form-fieldset__input form-fieldset__input--radio" name="layout" id="adaptive" value="adaptive">
+          <input type="radio" class="form-fieldset__input form-fieldset__input--radio" name="layout" id="adaptive" value="adaptive" checked>
           <label for="fixed" class="form-fieldset__label">Фиксированная</label>
           <input type="radio" class="form-fieldset__input form-fieldset__input--radio" name="layout" id="fixed" value="fixed">
           <label for="responsive" class="form-fieldset__label">Резиновая</label>
@@ -68,13 +71,13 @@
         <fieldset class="form-features form-fieldset">
           <legend class="form-fieldset__legend">Особенности:</legend>
           <label for="slider" class="form-fieldset__label">Слайдер</label>
-          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="slider" id="slider">
+          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="slider" id="slider" checked>
 
           <label for="advantages-block" class="form-fieldset__label">Фиксированная</label>
           <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="advantages-block" id="advantages-block">
 
           <label for="news" class="form-fieldset__label">Новости</label>
-          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="news" id="news">
+          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="news" id="news" checked>
 
           <label for="gallery" class="form-fieldset__label">Галерея</label>
           <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox" name="gallery" id="gallery">
@@ -85,20 +88,21 @@
         <button class="btn form-btn">Показать</button>
       </form>
     </aside>
+
     <div class="main__right-column">
-      <header class="main__column-header">
+      <header class="main__sort-header">
         <h4 class="fourth-header">Сортировать:</h4>
-        <ul class="main__sort-list">
-          <li class="main__sort-item">
-            <a href="#" class="main__sort-type active">По цене</a></li>
-          <li class="main__sort-item">
-            <a href="#" class="main__sort-type">По типу</a></li>
-          <li class="main__sort-item">
-            <a href="#" class="main__sort-type">По названию</a></li>
-          <li class="main__sort-item">
-            <a href="#" class="main__sort-type active">По убыванию</a></li>
-          <li class="main__sort-item">
-            <a href="#" class="main__sort-type">По возрастанию</a></li>
+        <ul class="sort-list">
+          <li class="sort-list__item">
+            <a href="#" class="sort-list__link sort-list__link--active">По цене</a></li>
+          <li class="sort-list__item">
+            <a href="#" class="sort-list__link">По типу</a></li>
+          <li class="sort-list__item">
+            <a href="#" class="sort-list__link">По названию</a></li>
+          <li class="sort-list__item">
+            <a href="#" class="sort-list__link sort-list__link--active">По убыванию</a></li>
+          <li class="sort-list__item">
+            <a href="#" class="sort-list__link">По возрастанию</a></li>
         </ul>
       </header>
 
@@ -106,7 +110,7 @@
         <article class="product-item">
           <span class="product-item__visual-btn"></span>
           <img src="" alt="Информационный сайт для туристов Sedona" class="product-item__img">
-          <div class="product-item__info-wrapper">
+          <div class="product-item__info-wrapper" tabindex="0">
             <h4 class="product-item__info-header">Sedona</h4>
             <p class="product-item__info-paragraph">Информационный сайт для туристов</p>
             <a href="#" class="product-item__price-btn">9 900 руб.</a>
@@ -116,7 +120,7 @@
         <article class="product-item">
           <span class="product-item__visual-btn"></span>
           <img src="" alt="Продуктовый лендинг приложения для iOS и Android Pink" class="product-item__img">
-          <div class="product-item__info-wrapper">
+          <div class="product-item__info-wrapper" tabindex="0">
             <h4 class="product-item__info-header">Pink app</h4>
             <p class="product-item__info-paragraph">Продуктовый лендинг
               приложения для iOS и Android</p>
@@ -127,7 +131,7 @@
         <article class="product-item">
           <span class="product-item__visual-btn"></span>
           <img src="" alt="Сайт салона красоты Barbershop" class="product-item__img">
-          <div class="product-item__info-wrapper">
+          <div class="product-item__info-wrapper" tabindex="0">
             <h4 class="product-item__info-header">Barbershop</h4>
             <p class="product-item__info-paragraph">Сайт салоны красоты.Для мужчин, да.</p>
             <a href="#" class="product-item__price-btn">9 900 руб.</a>
@@ -137,7 +141,7 @@
         <article class="product-item">
           <span class="product-item__visual-btn"></span>
           <img src="" alt="Интернет-магазин вязаных игрушек Mishka" class="product-item__img">
-          <div class="product-item__info-wrapper">
+          <div class="product-item__info-wrapper" tabindex="0">
             <h4 class="product-item__info-header">Mishka</h4>
             <p class="product-item__info-paragraph">Интернет-магазин вязаных игрушек</p>
             <a href="#" class="product-item__price-btn">9 900 руб.</a>
@@ -147,7 +151,7 @@
         <article class="product-item">
           <span class="product-item__visual-btn"></span>
           <img src="" alt="Лендинг курсов повышения квалификации A PLUS" class="product-item__img">
-          <div class="product-item__info-wrapper">
+          <div class="product-item__info-wrapper" tabindex="0">
             <h4 class="product-item__info-header">A plus</h4>
             <p class="product-item__info-paragraph">Лендинг курсов повышения квалификации</p>
             <a href="#" class="product-item__price-btn">9 900 руб.</a>
@@ -157,7 +161,7 @@
         <article class="product-item">
           <span class="product-item__visual-btn"></span>
           <img src="" alt="Промо-сайт производителя крафтового кваса КВАСТ" class="product-item__img">
-          <div class="product-item__info-wrapper">
+          <div class="product-item__info-wrapper" tabindex="0">
             <h4 class="product-item__info-header">Кваст</h4>
             <p class="product-item__info-paragraph">Промо-сайт производителя крафтового кваса</p>
             <a href="#" class="product-item__price-btn">9 900 руб.</a>
