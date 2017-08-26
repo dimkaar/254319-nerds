@@ -1,0 +1,36 @@
+{
+  "name": "254319-nerds",
+  "version": "1.0.0",
+  "description": "* Студент: [Dmitriy Varganov](https://up.htmlacademy.ru/htmlcss/18/user/254319). * Наставник: [Полина Катышева](https://htmlacademy.ru/profile/id262423).",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimkaar/254319-nerds.git"
+  },
+  "author": "dimkaar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimkaar/254319-nerds/issues"
+  },
+  "homepage": "https://github.com/dimkaar/254319-nerds#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autopolyfiller": "^1.2.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
+    "run-sequence": "^2.1.0"
+  }
+}
