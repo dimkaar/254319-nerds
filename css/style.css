@@ -266,7 +266,7 @@ body {
 
 .slider__slide {
   display: none;
-  padding-top: 72px;
+  padding-top: 75px;
   padding-bottom: 80px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -617,10 +617,8 @@ body {
 
 .map-block {
   position: relative;
-  z-index: -2;
 
-  padding-top: 54px;
-  padding-bottom: 50px;
+  min-height: 415px;
 
   background-color: #e8e4db;
   background-image: url('../img/map.jpg');
@@ -634,6 +632,7 @@ body {
   position: absolute;
   top: 50%;
   left: 57%;
+  z-index: 2;
 
   width: 231px;
   height: 190px;
@@ -651,11 +650,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .map-block__contacts-block {
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
+  top: 54px;
 
   width: 320px;
   padding: 50px;
@@ -686,7 +687,7 @@ body {
 
 .map-block__btn {
   padding-right: 45px;
-  padding-left: 45px;
+  padding-left: 44px;
 }
 
 .main-footer__footer-contacts {
@@ -1399,7 +1400,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 }
 
 .product-item {
@@ -1414,8 +1415,8 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 360px;
-  margin-bottom: 33px;
-  padding-top: 39px;
+  margin-bottom: 31px;
+  padding-top: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1424,6 +1425,11 @@ body {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   overflow: hidden;
+}
+
+.product-item__img {
+  width: 360px;
+  height: 576px;
 }
 
 .product-item:hover {
@@ -1476,7 +1482,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 60px 43px;
+  padding: 20px 60px 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1490,7 +1496,7 @@ body {
 }
 
 .product-item__info-title {
-  margin: 10px 0;
+  margin: 7px 0;
 
   font-weight: 700;
   text-align: center;
@@ -1498,7 +1504,7 @@ body {
 }
 
 .product-item__info-paragraph {
-  margin: 10px 0;
+  margin: 7px 0;
   max-height: 100px;
 
   line-height: 18px;
@@ -1508,7 +1514,7 @@ body {
 }
 
 .product-item__price-btn {
-  margin-top: 10px;
+  margin-top: 25px;
   padding-right: 60px;
   padding-left: 60px;
 }
