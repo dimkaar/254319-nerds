@@ -33,33 +33,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    position: relative;
-
-    width: 100%;
-    padding: 0 9.65%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .container--underlined::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    width: 80.6%;
-    height: 2px;
-    margin: 0 auto;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-
-    background-color: #eeeeee;
-  }
-}
-
 @media (max-width: 1200px) {
   .container {
     position: relative;
@@ -87,6 +60,15 @@ body {
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 9.65%;
+  }
+
+  .container--underlined::after {
+    width: 80.6%;
+  }
+}
 
 .visually-hidden {
   position: absolute;
