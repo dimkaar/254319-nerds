@@ -43,8 +43,8 @@
   <main class="main main--flex container">
     <aside class="main__left-column">
       <form action="#" class="form">
-        <fieldset class="form__price form-fieldset">
-          <legend class="form-fieldset__legend form-fieldset__legend--margin-bottom">Стоимость:</legend>
+        <div class="form__price form-div">
+          <h3 class="form-div__title form-div__title--margin-bottom">Стоимость:</h3>
           <div class="range-filter">
             <div class="range-filter__controls">
               <div class="range-filter__scale">
@@ -58,42 +58,42 @@
               <label for="max-price" class="range-filter__label">До<input type="text" class="range-filter__input" name="max-price" id="max-price" value="15 000"></label>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="form-layout form-fieldset form-fieldset--flex">
-          <legend class="form-fieldset__legend">Сетка:</legend>
-          <input type="radio" class="form-fieldset__input form-fieldset__input--radio visually-hidden" name="layout" id="adaptive" value="adaptive" checked tabindex="0">
-          <label for="adaptive" class="form-fieldset__label-styled form-fieldset__label-styled--radio" tabindex="0">Адаптивная</label>
+        <div class="form-layout form-div form-div--flex">
+          <h3 class="form-div__title">Сетка:</h3>
+          <input type="radio" class="form-div__input form-div__input--radio visually-hidden" name="layout" id="adaptive" value="adaptive" checked tabindex="0">
+          <label for="adaptive" class="form-div__label-styled form-div__label-styled--radio" tabindex="0">Адаптивная</label>
 
-          <input type="radio" class="form-fieldset__input form-fieldset__input--radio visually-hidden" name="layout" id="fixed" value="fixed" tabindex="0">
-          <label for="fixed" class="form-fieldset__label-styled form-fieldset__label-styled--radio" tabindex="0">Фиксированная</label>
+          <input type="radio" class="form-div__input form-div__input--radio visually-hidden" name="layout" id="fixed" value="fixed" tabindex="0">
+          <label for="fixed" class="form-div__label-styled form-div__label-styled--radio" tabindex="0">Фиксированная</label>
 
-          <input type="radio" class="form-fieldset__input form-fieldset__input--radio visually-hidden" name="layout" id="responsive" value="responsive" tabindex="0">
-          <label for="responsive" class="form-fieldset__label-styled form-fieldset__label-styled--radio" tabindex="0">Резиновая</label>
-        </fieldset>
+          <input type="radio" class="form-div__input form-div__input--radio visually-hidden" name="layout" id="responsive" value="responsive" tabindex="0">
+          <label for="responsive" class="form-div__label-styled form-div__label-styled--radio" tabindex="0">Резиновая</label>
+        </div>
 
-        <fieldset class="form-features form-fieldset form-fieldset--flex">
-          <legend class="form-fieldset__legend">Особенности:</legend>
-          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox visually-hidden" name="slider" id="slider" checked>
-          <label for="slider" class="form-fieldset__label-styled form-fieldset__label-styled--checkbox" tabindex="0">Слайдер</label>
+        <div class="form-features form-div form-div--flex">
+          <h3 class="form-div__title">Особенности:</h3>
+          <input type="checkbox" class="form-div__input form-div__input--checkbox visually-hidden" name="slider" id="slider" checked>
+          <label for="slider" class="form-div__label-styled form-div__label-styled--checkbox" tabindex="0">Слайдер</label>
 
-          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox visually-hidden" name="advantages-block" id="advantages-block">
-          <label for="advantages-block" class="form-fieldset__label-styled form-fieldset__label-styled--checkbox" tabindex="0">Блок преимуществ</label>
+          <input type="checkbox" class="form-div__input form-div__input--checkbox visually-hidden" name="advantages-block" id="advantages-block">
+          <label for="advantages-block" class="form-div__label-styled form-div__label-styled--checkbox" tabindex="0">Блок преимуществ</label>
 
-          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox visually-hidden" name="news" id="news" checked>
-          <label for="news" class="form-fieldset__label-styled form-fieldset__label-styled--checkbox" tabindex="0">Новости</label>
+          <input type="checkbox" class="form-div__input form-div__input--checkbox visually-hidden" name="news" id="news" checked>
+          <label for="news" class="form-div__label-styled form-div__label-styled--checkbox" tabindex="0">Новости</label>
 
-          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox visually-hidden" name="gallery" id="gallery">
-          <label for="gallery" class="form-fieldset__label-styled form-fieldset__label-styled--checkbox" tabindex="0">Галерея</label>
+          <input type="checkbox" class="form-div__input form-div__input--checkbox visually-hidden" name="gallery" id="gallery">
+          <label for="gallery" class="form-div__label-styled form-div__label-styled--checkbox" tabindex="0">Галерея</label>
 
-          <input type="checkbox" class="form-fieldset__input form-fieldset__input--checkbox visually-hidden" name="cart" id="cart">
-          <label for="cart" class="form-fieldset__label-styled form-fieldset__label-styled--checkbox" tabindex="0">Корзина</label>
-        </fieldset>
+          <input type="checkbox" class="form-div__input form-div__input--checkbox visually-hidden" name="cart" id="cart">
+          <label for="cart" class="form-div__label-styled form-div__label-styled--checkbox" tabindex="0">Корзина</label>
+        </div>
         <button class="btn btn--grey-black form-btn">Показать</button>
       </form>
     </aside>
 
-    <div class="main__right-column">
+    <section class="main__right-column">
       <header class="main__sort-header">
         <h3 class="third-title main__sort-title">Сортировать:</h3>
         <ul class="sort-list">
@@ -104,7 +104,7 @@
           <li class="sort-list__item">
             <a href="#" class="sort-list__link">По названию</a></li>
         </ul>
-        <ul class="sort-list">
+        <ul class="sort-list sort-list--smaller">
           <li class="sort-list__item">
             <a href="#" class="sort-list__link sort-list__link--active sort-list__link--arrow">По убыванию</a></li>
           <li class="sort-list__item">
@@ -180,7 +180,7 @@
         <a href="#" class="btn btn--grey-black pagination__item" title="Переход на страницу">3</a>
         <a href="#" class="btn btn--grey-black pagination__item pagination__item--broader" title="Переход на страницу">Следующая</a>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="main-footer">
