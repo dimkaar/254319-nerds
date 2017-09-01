@@ -1525,8 +1525,9 @@ body {
 }
 
 .product-item__info-paragraph {
-  margin: 7px 0;
+  max-width: 240px;
   max-height: 100px;
+  margin: 7px 0;
 
   line-height: 18px;
   color: #666666;
