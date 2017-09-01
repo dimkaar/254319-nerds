@@ -712,8 +712,9 @@ body {
 }
 
 .map-block__btn {
-  padding-right: 45px;
-  padding-left: 44px;
+  display: block;
+  padding-right: 42px;
+  padding-left: 42px;
 }
 
 .main-footer__footer-contacts {
