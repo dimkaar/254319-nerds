@@ -1317,10 +1317,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 760px;
   margin: 50px 0 38px;
 }
 
 .main__sort-title {
+  width: 180px;
   margin-top: 6px;
 
   line-height: 18px;
@@ -1330,17 +1335,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 280px;
+  width: 300px;
   margin-top: 4px;
-  margin-left: 264px;
+  margin-left: 220px;
   padding: 0;
 
   list-style: none;
 }
 
 .sort-list--smaller {
-  width: 42px;
-  margin-left: 39px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 60px;
+  margin-left: 0;
 }
 
 .sort-list__link {
@@ -1523,8 +1531,7 @@ body {
   line-height: 18px;
   color: #666666;
   text-align: center;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .product-item__price-btn {
