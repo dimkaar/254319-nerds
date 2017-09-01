@@ -358,14 +358,14 @@ body {
 }
 
 .slider__slide2 {
-  padding-right: 660px;
+  padding-right: 630px;
 
   background-image: url('../img/index-slide2.png');
   background-position: 96% 50%;
 }
 
 .slider__slide3 {
-  padding-right: 760px;
+  padding-right: 730px;
 
   background-image: url('../img/index-slide3.png');
   background-size: 52% auto;
