@@ -183,8 +183,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 460px;
-  margin: 0 0 0 182px;
+  width: 484px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -192,7 +192,6 @@ body {
 
 .nav-list:last-of-type {
   width: 115px;
-  margin-left: 224px;
 }
 
 .nav-list__item {
@@ -1325,19 +1324,6 @@ body {
   margin-top: 6px;
 
   line-height: 18px;
-}
-
-.sort-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 280px;
-  margin-top: 4px;
-  padding: 0;
-
-  list-style: none;
 }
 
 .sort-list {
