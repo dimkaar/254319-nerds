@@ -1,15 +1,15 @@
 @-webkit-keyframes openModal {
   0%    { opacity: 0; left: -50%; }
-  33%   { opacity: 0.8; left: 35%; -webkit-transform: skewX(45deg) scale(0.5); transform: skewX(45deg) scale(0.5); }
+  33%   { opacity: 0.8; left: 20%; -webkit-transform: skewX(45deg) scale(0.5); transform: skewX(45deg) scale(0.5); }
   66%   { opacity: 1; left: -20%; -webkit-transform: skewX(-45deg) scale(0.8); transform: skewX(-45deg) scale(0.8); }
-  100%  { opacity: 1; left: 120px; -webkit-transform: skewX(0) scale(1); transform: skewX(0) scale(1); }
+  100%  { opacity: 1; left: 50%; -webkit-transform: skewX(0) scale(1); transform: skewX(0) scale(1) translateX(-50%); }
 }
 
 @keyframes openModal {
   0%    { opacity: 0; left: -50%; }
-  33%   { opacity: 0.8; left: 35%; -webkit-transform: skewX(45deg) scale(0.5); transform: skewX(45deg) scale(0.5); }
+  33%   { opacity: 0.8; left: 20%; -webkit-transform: skewX(45deg) scale(0.5); transform: skewX(45deg) scale(0.5); }
   66%   { opacity: 1; left: -20%; -webkit-transform: skewX(-45deg) scale(0.8); transform: skewX(-45deg) scale(0.8); }
-  100%  { opacity: 1; left: 120px; -webkit-transform: skewX(0) scale(1); transform: skewX(0) scale(1); }
+  100%  { opacity: 1; left: 50%; -webkit-transform: skewX(0) scale(1); transform: skewX(0) scale(1) translateX(-50%); }
 }
 
 /* Общие стили */
@@ -827,22 +827,25 @@ body {
 }
 
 .modal-window {
-  position: fixed;
-  top: 68.5%;
+  position: absolute;
+  top: 69%;
+  left: 50%;
   z-index: 10;
 
   display: none;
   width: 960px;
   margin: 0 auto;
-  padding: 70px 100px;
+  padding: 65px 100px 85px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 20px 50px 5px #5f5f5f;
           box-shadow: 0 20px 50px 5px #5f5f5f;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 
-  /*-webkit-animation: openModal;
+  -webkit-animation: openModal;
 
           animation: openModal;
   -webkit-animation-duration: 2s;
@@ -850,12 +853,12 @@ body {
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;*/
+          animation-fill-mode: forwards;
 }
 
 .modal-window__text-promo {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 
   font-size: 45px;
   font-weight: 500;
@@ -865,14 +868,14 @@ body {
 
 .modal-window__close-btn {
   position: absolute;
-  top: 88px;
-  right: 88px;
+  top: 74px;
+  right: 84px;
 
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   padding: 0;
 
-  text-indent: 100%;
+  text-indent: 200%;
   overflow: hidden;
   white-space: nowrap;
 
@@ -896,7 +899,7 @@ body {
   top: 50%;
   left: 0;
 
-  width: 24px;
+  width: 28px;
   height: 4px;
   margin-top: -2px;
 
@@ -938,7 +941,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 
   font-weight: 700;
   line-height: 18px;
@@ -962,6 +965,7 @@ body {
 
 .contact-form__textarea {
   min-height: 115px;
+  margin-bottom: 35px;
 }
 
 .contact-form__input::-webkit-input-placeholder,
