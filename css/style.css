@@ -141,6 +141,8 @@ body {
 
 /* index.html */
 .main-header {
+  width: 100%;
+  min-width: 1200px;
   padding-top: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -676,11 +678,20 @@ body {
   width: 100%;
 }
 
-.map-block__contacts-block {
+.map-block__contacts-wrapper {
   position: absolute;
-  z-index: 2;
   top: 54px;
+  left: 50%;
+  z-index: 2;
 
+  width: 1200px;
+
+  -webkit-transform: translateX(-50%);
+
+          transform: translateX(-50%);
+}
+
+.map-block__contacts-block {
   width: 320px;
   padding: 50px;
   -webkit-box-sizing: border-box;
