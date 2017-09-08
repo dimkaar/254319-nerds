@@ -193,15 +193,19 @@ body {
   width: 115px;
 }
 
+.nav-list:last-of-type .nav-list__item {
+  padding-left: 0;
+}
+
 .nav-list__item {
   padding: 0 22px;
 }
 
-.nav-list__item:first-of-type{
+.nav-list__item:nth-of-type(4n+1){
   padding-left: 0;
 }
 
-.nav-list__item:last-of-type {
+.nav-list__item:nth-of-type(4n) {
   padding-right: 0;
 }
 
